@@ -1,8 +1,9 @@
 # news/tests/test_trial.py
+from unittest import skip
+
 from django.test import TestCase
 
 from news.models import News
-from unittest import skip
 
 
 @skip('Не нужен для проекта')

@@ -1,18 +1,15 @@
 # news/tests/test_content.py
+from datetime import datetime, timedelta
+
 from django.conf import settings
+# Импортируем функцию для получения модели пользователя.
+from django.contrib.auth import get_user_model
 # Импортируем функцию reverse(), она понадобится для получения адреса страницы.
 from django.shortcuts import reverse
 from django.test import TestCase
-
 from django.utils import timezone
 
-# Импортируем функцию для получения модели пользователя.
-from django.contrib.auth import get_user_model
-
 from news.models import Comment, News
-
-from datetime import datetime, timedelta
-
 
 User = get_user_model()
 

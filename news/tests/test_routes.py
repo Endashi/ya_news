@@ -6,8 +6,6 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import reverse
 from django.test import TestCase
 
-from news.models import News
-
 # Импортируем класс комментария.
 from news.models import Comment, News
 
