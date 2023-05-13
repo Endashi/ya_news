@@ -100,4 +100,4 @@ class TestDetailPage(TestCase):
         # Авторизуем клиент при помощи ранее созданного пользователя.
         self.client.force_login(self.author)
         response = self.client.get(self.detail_url)
-        self.assertIn('form', response.context)  
+        self.assertIn('form', response.context)
